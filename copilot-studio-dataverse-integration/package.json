@@ -1,0 +1,27 @@
+{
+  "name": "copilot-studio-dataverse-integration",
+  "version": "1.0.0",
+  "description": "End-to-end solution for integrating Microsoft Copilot Studio with Dataverse to retrieve and display HR links using Adaptive Cards",
+  "main": "scripts/dataverse-query.js",
+  "scripts": {
+    "test": "node scripts/dataverse-query.js && node scripts/response-formatter.js",
+    "demo": "node demo/demo-query.js"
+  },
+  "keywords": [
+    "copilot-studio",
+    "microsoft",
+    "dataverse",
+    "power-platform",
+    "adaptive-cards",
+    "hr",
+    "javascript",
+    "integration"
+  ],
+  "author": "JavaScript-Projects",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

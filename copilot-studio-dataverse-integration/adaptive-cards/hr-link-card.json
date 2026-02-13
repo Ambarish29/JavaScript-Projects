@@ -1,0 +1,96 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://adaptivecards.io/content/cats/1.png",
+                  "size": "Small",
+                  "style": "Person"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${title}",
+                  "weight": "Bolder",
+                  "size": "Large",
+                  "wrap": true,
+                  "color": "Accent"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "HR Resource",
+                  "isSubtle": true,
+                  "size": "Small",
+                  "spacing": "None"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "type": "Container",
+      "spacing": "Medium",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "${description}",
+          "wrap": true,
+          "spacing": "Small"
+        },
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Resource Type:",
+              "value": "HR Link"
+            },
+            {
+              "title": "Access:",
+              "value": "Click the button below"
+            }
+          ],
+          "spacing": "Medium"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "Medium",
+      "separator": true,
+      "items": [
+        {
+          "type": "ActionSet",
+          "actions": [
+            {
+              "type": "Action.OpenUrl",
+              "title": "${linkText}",
+              "url": "${url}",
+              "style": "positive"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

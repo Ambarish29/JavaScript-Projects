@@ -1,0 +1,65 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "🔗 HR Resource Found",
+      "weight": "Bolder",
+      "size": "ExtraLarge",
+      "wrap": true,
+      "color": "Accent",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "${title}",
+          "weight": "Bolder",
+          "size": "Large",
+          "wrap": true,
+          "horizontalAlignment": "Center"
+        }
+      ],
+      "spacing": "Medium",
+      "separator": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${description}",
+      "wrap": true,
+      "spacing": "Medium",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "Container",
+      "spacing": "Large",
+      "items": [
+        {
+          "type": "ActionSet",
+          "actions": [
+            {
+              "type": "Action.OpenUrl",
+              "title": "🔗 ${linkText}",
+              "url": "${url}",
+              "style": "positive"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "💡 Tip: Click the button above to access this resource",
+      "size": "Small",
+      "isSubtle": true,
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "spacing": "Medium"
+    }
+  ]
+}
